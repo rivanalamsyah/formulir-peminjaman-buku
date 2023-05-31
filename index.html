@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulir Peminjaman Buku</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulir Peminjaman Buku</h1>
+    <form id="myForm">
+      <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="book">Judul Buku:</label>
+        <input type="text" id="book" name="book" required>
+      </div>
+      <div class="form-group">
+        <label for="due-date">Tanggal Pengembalian:</label>
+        <input type="date" id="due-date" name="due-date" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="apiResult"></div>
+  <script src="script.js"></script>
+</body>
+</html>
